@@ -6,6 +6,7 @@ function filter(array, isOdd) {
                 dataArray.push(data)
             }
         }
+
     }
     else  {
         for (let data of array) {
