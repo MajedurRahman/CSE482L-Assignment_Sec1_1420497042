@@ -12,7 +12,7 @@
     <div class="mx-auto card" style="width: 250px">
         <form class="card-body bold">
             <p>Example Array</p>
-            <p>[1, 2, 3, 4,5]</p>
+            <p>[1, 2 , 6 ,2, 4, 5]</p>
             <br>
             <h6>isOdd = true </h6>
             <p id="resultOdd" class="h6"></p>
@@ -30,13 +30,11 @@
     var resultEven = document.getElementById("resultEven");
 
     var myFunction = function isODD(val) {
-        return val % 2 === 0;
+        return val % 2 === 1;
     };
 
-
-    result.innerHTML = "[ " + filter([1, 2, 3, 4, 5], myFunction(3)) + " ]";
-
-    resultEven.innerHTML = "[ " + filter([1, 2, 3, 4, 5], myFunction(8)) + " ]";
+    result.innerHTML = "[ " + filter([1, 2 , 6 ,2, 4, 5], myFunction(3)) + " ]";
+    resultEven.innerHTML = "[ " + filter([1, 2 , 6 ,2, 4, 5], myFunction(8)) + " ]";
 
 
 </script>

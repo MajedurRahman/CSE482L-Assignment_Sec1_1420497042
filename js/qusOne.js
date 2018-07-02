@@ -1,4 +1,9 @@
 function prefix(string, length) {
-    return string.slice(0, parseInt(length));
+    if (length) {
+        return string.slice(0, parseInt(length));
+    } else {
+        return string.slice(0, 1);
+    }
+
 }
 

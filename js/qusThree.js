@@ -1,14 +1,18 @@
-
 function filter(array, isOdd) {
-    if (!isOdd) {
-        return array.filter(function (element, index, array) {
-            return (index % 2 === 0);
-        })
+    var dataArray = [];
+    if (isOdd) {
+        for (let data of array) {
+            if ((data % 2) === 1) {
+                dataArray.push(data)
+            }
+        }
     }
-    else {
-        return array.filter(function (element, index, array) {
-            return (index % 2 === 1);
-        })
+    else  {
+        for (let data of array) {
+            if ((data % 2) === 0) {
+                dataArray.push(data)
+            }
+        }
     }
-
+    return dataArray
 }
